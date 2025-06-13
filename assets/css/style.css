@@ -1,0 +1,382 @@
+
+.oswald-700 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .oswald-500 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .oswald-400 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .oswald-200 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+/* Fonts (example Oswald from your snippet) */
+.oswald-700 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Body and content */
+html, body {
+ height: 100%; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: margin-left 0.4s ease;
+  background-color: #FAF5EC;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  position: relative;
+  color: #fff; /* default color */
+}
+
+.nav-link:hover {
+  color: #d4af37; /* gold */
+  font-size: x-large;
+}
+
+  
+.content {
+  
+  margin-left: 0;
+  transition: margin-left 0.4s ease;
+  background-color: #FAF5EC;
+}
+
+/* Content shifted when sidebar open */
+.content.shifted {
+  margin-left: 250px; /* Width of sidebar */
+}
+
+/* Sidebar */
+#sidebarMenu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden */
+  width: 250px;
+  height: 100vh;
+  background-color:#FAF5EC;
+  overflow-y: auto;
+  transition: left 0.2s ease;
+  z-index: 1040;
+  padding-top: 60px;
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+#sidebarMenu.show {
+  left: 0;
+  /* background-image: url('../image/Leaves.jpeg'); adjust path */
+}
+
+
+
+/* Brand icon container */
+.brand-container {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 1050;
+  }
+  
+  /* Default: black text fallback */
+  .brand-icon {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px 20px;
+  
+    /* Default black color */
+    /* color: black;
+    -webkit-text-fill-color: black;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5); */
+  }
+  
+  /* Image text fill when sidebar is opened */
+  .brand-icon.sidebar-opened {
+    background-image: url('../image/jewel.jpeg');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black; /* fallback */
+    text-shadow: none;
+  }
+  
+  /* Rotate TWAL 180deg on toggle */
+  .brand-icon.rotated {
+    transform: rotateY(180deg);
+  }
+  
+/*footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    background: #333;
+    background-image: url('../image/jewel.jpeg');
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-section {
+    position: relative;
+    height: 800px; /* Adjust as needed */
+    overflow: hidden;
+    background-color: #000; /* fallback */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover entire area */
+    z-index: 1;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Adjust margin from left */
+    transform: translateY(-50%);
+    color:#000000;
+    text-align: left; /* Align text to the left */
+    z-index: 2;
+    max-width: 600px; /* Optional: limit width */
+  }
+  
+  
+  .navbar {
+    z-index: 3;
+    position: relative;
+  }
+  
+  .poster {
+      background-color: #fdfcf9;
+      border: 12px solid #e6e0d3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .poster img {
+      width:100%;
+      height: 400px;
+      display: block;
+    }
+
+    .poster-footer {
+      background-color: #e6e0d3;
+      padding: 25px;
+      font-family: 'Playfair Display', serif;
+      color: #4e4535;
+      font-size: 14px;
+    }
+
+    .poster-footer .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .poster-left h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      margin-bottom: 5px;
+      color: #3b3226;
+    }
+
+    .poster-left div {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .poster-right {
+      text-align: right;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 767px) {
+      .poster {
+        margin-bottom: 30px;
+      }
+
+      .poster-footer .row {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .poster-right {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+
+    .poster-footer {
+  background-color: #e6e0d3;
+  padding: 15px; /* reduced from 25px */
+  font-family: 'Oswald', sans-serif;
+  color: #4e4535;
+  font-size: 13px; /* slightly smaller */
+}
+
+.poster-left h2 {
+  font-size: 26px; /* reduced from 32px */
+  margin-bottom: 2px;
+}
+
+.poster-left div {
+  font-size: 14px; /* reduced from 16px */
+}
+
+.poster-right {
+  font-size: 12px; /* reduced from 13px */
+  line-height: 1.4;
+}
+
+.border-color{
+  border-color: #FAF5EC;
+}
+
+.custom-input {
+  border: 1px solid #a98f18 !important; /* Gold border */
+  border-radius: 0 !important;          /* Square corners */
+  font-family: 'Oswald', sans-serif;
+}
+
+.custom-input:focus {
+  border-color: #d4b94f !important;
+  box-shadow: none !important;           /* Remove default shadow */
+  outline: none;
+}
+
+/* Button */
+.btn-custom {
+  background-color: #a98f18;             /* Gold background */
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  border: 1px solid #a98f18;             /* Gold border */
+  border-radius: 0;                      /* Square corners */
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: none;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #d4b94f;             /* Lighter gold on hover */
+  color: #222;
+  border-color: #d4b94f;
+  outline: none;
+  box-shadow: none;
+}
+
+.newsletter-popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 0.5rem;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px; right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.popup-content {
+  background: #d4af37; /* Gold background */
+  color: white;        /* White text for contrast */
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 0.5rem;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content input {
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.popup-content .btn-gold {
+  background-color: white;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}

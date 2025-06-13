@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAIA</title>
+    <!-- styling  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+      integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- preloading image -->
+    <link rel="preload" href="./assets/image/twal.jpeg" as="image" />
+    <!-- Include FontAwesome for star icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="brand-container" id="brandContainer">
+      <span class="brand-icon" id="brandToggle" style="color:#a98f18;">.KAIA</span>
+    </div>
+
+    <div id="sidebarMenu" class="collapse">
+      <ul class="nav flex-column px-3 mt-4">
+        <li class="nav-item">
+          <a class="nav-link oswald-400 text-dark" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link oswald-400 text-dark" href="#1">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link oswald-400 text-dark" href="#2">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link oswald-400 text-dark" href="#3">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <main class="content">
+        <!-- Hero Section -->
+        <section class="hero-section position-relative text-left bg-dark">
+          <img
+            src="./assets/image/jewel.jpeg"
+            alt="Background Image"
+            class="background-image"
+          />
+          <div class="overlay-text">
+            <h1 class="oswald-700" style="font-size: 100px; color: #faf5ec">
+              Adorned by Nature,<br />
+              Worn with Grace.
+            </h1>
+          </div>
+        </section>
+        <!-- About Section -->
+        <section class="container py-5" id="1">
+          <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h2 class="fw-bold mb-3 oswald-700">Inspired by Island Nature</h2>
+              <p class="text-muted">
+                KAIA is a tropical jewelry brand inspired by the raw beauty of
+                nature. Born from the harmony of sun, sea, and earth, KAIA
+                creates elegant, handcrafted pieces that celebrate natural
+                elements and island living. Each design reflects a deep
+                connection to the wild—organic textures, ocean hues, and
+                timeless forms. Whether worn on sandy shores or city streets,
+                KAIA jewelry evokes a sense of freedom, warmth, and effortless
+                style. Rooted in sustainability and artistry, KAIA invites you
+                to wear nature—beautifully.
+              </p>
+            </div>
+
+            <!-- Image Column with Proper Containment -->
+            <div class="col-md-6">
+              <div class="position-relative w-100">
+                <!-- Main Image -->
+                <img
+                  src="./assets/image/j (8).jpeg"
+                  alt="Island Scenery"
+                  class="img-fluid rounded shadow w-100"
+                />
+
+                <!-- Overlay Image (contained within wrapper) -->
+                <img
+                  src="./assets/imagE/PEOPLE (2).jpeg"
+                  alt="Wallpaper Overlay"
+                  class="position-absolute top-0 start-0 img-thumbnail border border-white shadow border-color"
+                  style="
+                    width: 40%;
+                    transform: translate(-10%, -10%);
+                    z-index: 1;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-5" id="2">
+          <div class="container">
+            <div class="row text-center">
+              <!-- Jewelry 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="poster">
+                  <img src="./assets/image/j (1).jpeg" alt="Jewelry Item 1" />
+                  <div class="poster-footer">
+                    <div class="row">
+                      <div class="col-6 poster-left text-start">
+                        <h2 class="oswald-400">KAIA Coral Necklace</h2>
+                        <div>Category: Necklace</div>
+                        <div>Size: Adjustable</div>
+                      </div>
+                      <div class="col-6 poster-right text-end">
+                        <strong>Price:</strong> $120
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jewelry 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="poster">
+                  <img src="./assets/image/j (2).jpeg" alt="Jewelry Item 2" />
+                  <div class="poster-footer">
+                    <div class="row">
+                      <div class="col-6 poster-left text-start">
+                        <h2 class="oswald-400">KAIA Ocean Ring</h2>
+                        <div>Category: Ring</div>
+                        <div>Size: 7</div>
+                      </div>
+                      <div class="col-6 poster-right text-end">
+                        <strong>Price:</strong> $80
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jewelry 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="poster">
+                  <img src="./assets/image/j (6).jpeg" alt="Jewelry Item 3" />
+                  <div class="poster-footer">
+                    <div class="row">
+                      <div class="col-6 poster-left text-start">
+                        <h2 class="oswald-400">KAIA Palm Bracelet</h2>
+                        <div>Category: Bracelet</div>
+                        <div>Size: Medium</div>
+                      </div>
+                      <div class="col-6 poster-right text-end">
+                        <strong>Price:</strong> $95
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Review Section -->
+
+        <!-- Review Carousel -->
+        <div class="container mt-5">
+          <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner text-center">
+              <!-- Review 1 -->
+              <div class="carousel-item active">
+                <div
+                  class="p-4"
+                  style="
+                    background-color: #e6e0d3;
+                    font-family: 'Oswald', sans-serif;
+                    color: #3b3226;
+                  "
+                >
+                  <h5>Emily R.</h5>
+                  <p style="font-size: 16px; color: #4e4535" class="oswald-200">
+                    “KAIA’s handcrafted necklace added the perfect tropical
+                    touch to my outfit. Exceptional quality and unique design!”
+                  </p>
+                  <div style="color: #a98f18; font-size: 18px">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="carousel-item">
+                <div
+                  class="p-4"
+                  style="
+                    background-color: #e6e0d3;
+                    font-family: 'Oswald', sans-serif;
+                    color: #3b3226;
+                  "
+                >
+                  <h5>Jason M.</h5>
+                  <p style="font-size: 16px; color: #4e4535">
+                    “The palm bracelet from KAIA is stunning! Comfortable and
+                    stylish, it’s become my favorite everyday accessory.”
+                  </p>
+                  <div style="color: #a98f18; font-size: 18px">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i
+                    ><i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="carousel-item">
+                <div
+                  class="p-4"
+                  style="
+                    background-color: #e6e0d3;
+                    font-family: 'Oswald', sans-serif;
+                    color: #3b3226;
+                  "
+                >
+                  <h5>Aisha T.</h5>
+                  <p style="font-size: 16px; color: #4e4535">
+                    “I receive compliments everywhere I go wearing my KAIA ocean
+                    ring. Truly a piece inspired by nature’s beauty.”
+                  </p>
+                  <div style="color: #a98f18; font-size: 18px">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <a
+              class="carousel-control-prev"
+              href="#reviewCarousel"
+              role="button"
+              data-slide="prev"
+              style="padding-bottom: 30px"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                style="background-color: transparent"
+              >
+                <i
+                  class="fas fa-chevron-left"
+                  style="color: #a98f18; font-size: 24px"
+                ></i>
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#reviewCarousel"
+              role="button"
+              data-slide="next"
+              style="padding-bottom: 30px"
+            >
+              <span
+                class="carousel-control-next-icon"
+                style="background-color: transparent"
+              >
+                <i
+                  class="fas fa-chevron-right"
+                  style="color: #a98f18; font-size: 24px"
+                ></i>
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="py-5" style="font-family: 'Oswald', sans-serif" id="3">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h2 class="fw-bold mb-4 text-center text-dark">Contact KAIA</h2>
+                <p class="text-center text-dark mb-5">
+                  Interested in custom tropical designs, jewelry inquiries, or
+                  simply want to connect? KAIA is here to bring your
+                  island-inspired jewelry dreams to life.
+                </p>
+
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label text-dark"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control custom-input"
+                      id="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-dark"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control custom-input"
+                      id="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label text-dark"
+                      >Your Message</label
+                    >
+                    <textarea
+                      class="form-control custom-input"
+                      id="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div style="display: flex; justify-content: center">
+                    <button
+                      type="submit"
+                      class="btn btn-custom px-4"
+                      style="background-color: #d4b94f"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--footer-->
+      <footer
+        class="bg-dark text-light pt-5 footer-kaia"
+        style="
+          background-image: url('./assets/image/jewel.jpeg');
+          background-size: cover;
+          background-position: center;
+          font-family: 'Oswald', sans-serif;
+        "
+      >
+        <div class="container">
+          <div class="row text-light">
+            <!-- Brand -->
+            <div class="col-md-3 mb-4">
+              <h4 class="fw-bold">KAIA</h4>
+              <p class="small text-white-50">
+                Timeless Jewelry for Every Moment
+              </p>
+              
+            </div>
+
+            <!-- Shop Links -->
+            <div class="col-md-3 mb-4">
+              <h6 class="text-uppercase text-white-50">Shop</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-light text-decoration-none"
+                    >Necklaces</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-light text-decoration-none">Rings</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light text-decoration-none"
+                    >Bracelets</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-light text-decoration-none"
+                    >Earrings</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Support Links -->
+            <div class="col-md-3 mb-4">
+              <h6 class="text-uppercase text-white-50">Support</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-light text-decoration-none">FAQs</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light text-decoration-none"
+                    >Shipping & Returns</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-light text-decoration-none"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-3 mb-4 text-md-start text-center">
+              <h6 class="text-uppercase text-white-50">Follow Us</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-light fs-5"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-light fs-5"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-light fs-5"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </li>
+              </ul>
+               <h6 class="text-uppercase text-white-50">
+              Subscribe to Our Newsletter
+            </h6>
+            <form class="d-flex flex-column flex-sm-row gap-2 mt-2">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="btn btn-dark" style="background-color: #a98f18;">Subscribe</button>
+            </form>
+            </div>
+          </div>
+       
+
+          <!-- Bottom -->
+          <div
+            class="text-center mt-4 pt-3 border-top border-light text-white-50 small"
+          >
+            &copy; 2025 KAIA. All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+      <!-- Add this in your <head> if Oswald font not yet included -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </div>
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup d-none">
+      <div class="popup-content text-center">
+        <h4>Join the KAIA Community</h4>
+        <p>Subscribe to get exclusive offers & tropical-inspired drops.</p>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="form-control my-2"
+        />
+        <button class="btn btn-gold w-100">Subscribe</button>
+        <button class="close-popup">&times;</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Custom Script to toggle navbar when clicking the brand -->
+  <script src="./assets/js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const popup = document.getElementById("newsletterPopup");
+      const closeBtn = document.querySelector(".close-popup");
+
+      // Show popup after a short delay
+      setTimeout(() => {
+        popup.classList.remove("d-none");
+      }, 1500);
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.add("d-none");
+      });
+    });
+  </script>
+</html>
